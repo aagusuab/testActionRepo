@@ -16,29 +16,18 @@ jobs:
           git diff
           # This fails when dist files are not up to date
           test -z "$(git diff --shortstat 2> /dev/null | tail -n1)"
-  test: # make sure the action works on a clean machine without building
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./
-        with:
-          pattern: 'FEATURE'
-          error: 'Your first line has to contain a commit type like "[BUGFIX]".'
-          checkAllCommitMessages: 'true'
-          accessToken: ${{ secrets.GITHUB_TOKEN }}
   hello_world_job:
     runs-on: ubuntu-latest
     name: Commit Message Print
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Install Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-      - name: Install Dependencies
-        run: npm install
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#      - name: Install Node.js, NPM and Yarn
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: '16.x'
+#      - name: Install Dependencies
+#        run: npm install
       - name: Commit Message Print
         id: Testing
         uses: aagusuab/wallet-commit-check-action@v3.1
