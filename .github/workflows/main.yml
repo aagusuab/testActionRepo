@@ -30,7 +30,9 @@ jobs:
         run: npm install
       - name: update dependencies
         run: npm ci
-      - run: tsc -p tsconfig.build.json
+      - run: npm i @actions/core
+      - run: npm i @actions/github
+      - run: npm i @actions/exec
       - name: Commit Message Print
         id: Testing
         uses: aagusuab/wallet-commit-check-action@v3.2
