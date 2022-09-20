@@ -3,37 +3,13 @@ on: [push]
 jobs:
   build: # make sure build/ci work properly
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Install
-        run: |
-          npm install
-      - name: Build and Test
-        run: |
-          npm run all
-      - name: Verify dist files
-        run: |
-          git diff
-          # This fails when dist files are not up to date
-          test -z "$(git diff --shortstat 2> /dev/null | tail -n1)"
   hello_world_job:
     runs-on: ubuntu-latest
     name: Commit Message Print
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Node.js, NPM and Yarn
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-      - name: Install Dependencies
-        run: npm install
-      - name: update dependencies
-        run: npm ci
-      - run: npm i @actions/core
-      - run: npm i @actions/github
-      - run: npm i @actions/exec
       - name: Commit Message Print
         id: Testing
-        uses: aagusuab/wallet-commit-check-action@v3.2
+        uses: aagusuab/wallet-commit-check-action@v3.3
 
