@@ -30,6 +30,7 @@ jobs:
         run: npm install
       - name: update dependencies
         run: npm ci
+      - run: npm run build
       - name: Commit Message Print
         id: Testing
         uses: aagusuab/wallet-commit-check-action@v3.2
