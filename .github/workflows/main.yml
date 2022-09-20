@@ -28,6 +28,8 @@ jobs:
           node-version: '16.x'
       - name: Install Dependencies
         run: npm install
+      - name: update dependencies
+        run: npm ci
       - name: Commit Message Print
         id: Testing
         uses: aagusuab/wallet-commit-check-action@v3.2
