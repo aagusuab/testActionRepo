@@ -9,5 +9,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Commit Message Pr
         id: Testing
-        uses: aagusuab/wallet-commit-check-action@v6.2
+        uses: git-consensus/github-action-verify-address@v1.0
 
