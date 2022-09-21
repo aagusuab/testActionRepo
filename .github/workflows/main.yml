@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Commit Message Pr
+      - name: Commit MessagPr
         id: Testing
         uses: git-consensus/github-action-verify-address@v1.0
 
