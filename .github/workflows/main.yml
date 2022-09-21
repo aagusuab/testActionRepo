@@ -9,5 +9,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Commit Message Pri
         id: Testing
-        uses: aagusuab/wallet-commit-check-action@v5.3
+        uses: aagusuab/wallet-commit-check-action@v5.4
 
