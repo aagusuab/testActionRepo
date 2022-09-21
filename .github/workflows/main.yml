@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Commit Message Pri
+      - name: Commit Message Pr
         id: Testing
         uses: aagusuab/wallet-commit-check-action@v6.2
 
