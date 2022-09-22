@@ -10,5 +10,5 @@ jobs:
       - name: Commit MessagPr
         id: Testing
 #        uses: git-consensus/github-action-verify-address@v1.0
-        uses: aagusuab/wallet-commit-check-action@v7.2
+        uses: aagusuab/wallet-commit-check-action@v7.3
 
