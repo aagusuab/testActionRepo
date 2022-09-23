@@ -10,5 +10,5 @@ jobs:
       - name: Commit Address Check
         id: Testing
 #        uses: git-consensus/github-action-verify-address@v1.1
-        uses: aagusuab/wallet-commit-check-action@v8.4
+        uses: aagusuab/wallet-commit-check-action@v8.5
 
