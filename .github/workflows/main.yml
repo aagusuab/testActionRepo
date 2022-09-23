@@ -9,6 +9,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Commit Address Check
         id: Testing
-        uses: git-consensus/github-action-verify-address@v1.0
+        uses: git-consensus/github-action-verify-address@v1.1
 #        uses: aagusuab/wallet-commit-check-action@v7.4
 
