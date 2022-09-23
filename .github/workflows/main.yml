@@ -12,5 +12,5 @@ jobs:
         uses: git-consensus/github-action-verify-address@v1.2
 #        uses: aagusuab/wallet-commit-check-action@v9.3
         with:
-          separator: "\n"
+          separator: " "
 
